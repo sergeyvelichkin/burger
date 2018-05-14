@@ -1,0 +1,47 @@
+<h1 align="center">Eat-da-burger</h1>
+
+
+<center>
+  <img src="assets/img/burger.png" class="centerImage" alt="burger" height="300" width="300">
+</center>
+<div class="parent">
+  <div class="child center">
+    <h2 align="center">Burgers to do</h2>
+    <ul>
+      {{#each burgers}} {{#unless devoured}}
+      <li>
+        <button class="button1">{{burger_name}}</button>
+
+        <button class="devour" data-id="{{this.id}}">Devoured</button>
+      </li>
+
+      {{/unless}} {{/each}}
+    </ul>
+  </div>
+
+  <div class="child center">
+    <h2 align="center">Order a burger</h2>
+    <form class="create-form">
+
+      <div class="form-group center">
+        <label for="ca">What burger do you want to order:</label>
+        <br>
+        <input id="textbox" type="text" id="ca">
+      </div>
+      <button class="button2 center" type="submit" id="addBurger">Submit</button>
+    </form>
+  </div>
+
+  <div class="child center2">
+    <h2 align="center">Burgers done</h2>
+
+    <ul>
+      {{#each burgers}} {{#if devoured}}
+      <li> 
+        <button class="button1 disabled">{{burger_name}}</button>
+      </li>
+      {{/if}} {{/each}}
+    </ul>
+  </div>
+
+</div>

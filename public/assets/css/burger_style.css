@@ -1,0 +1,62 @@
+body {
+    background-color: yellow;
+}
+
+
+.button1 {
+    background-color: grey; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.child{
+   float: left;
+   width:30%;
+   margin:15px;
+}
+.parent{
+    white-space:nowrap;
+}
+
+.button2 {
+    background-color: green; 
+    border: none;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 5px 4px;
+    cursor: pointer;
+}
+
+#textbox {
+    height: 80px;
+    width: 200px;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.center2 {
+    margin: auto;
+}
